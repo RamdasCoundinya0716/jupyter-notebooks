@@ -35,11 +35,17 @@ docker run -p 6969:6969 -v mynotebooks:/app/notebooks python-jupyter
 This command creates a Docker volume named `mynotebooks` and mounts it to the "notebooks" directory inside the container.
 
 ### Access Jupyter Notebook
+You will see something like this : http://127.0.0.1:6969/tree?token=<token> on the terminal.
+
+Copy the token(after token=**<token>**).
 
 Open your web browser and go to [http://localhost:6969](http://localhost:6969). You should see the Jupyter notebook interface.
 
-### Saving Your Work
+Paste the **<token>** in the token section and authenticate yourself.
 
+Thats it. Start developing code now!
+
+### Saving Your Work
 By using a Docker volume (`mynotebooks`), your Jupyter notebook files will be saved persistently. This ensures that your work persists even if you stop and remove the Docker container.
 
 ### Additional Notes
